@@ -1,0 +1,72 @@
+.leadership {
+  padding: 100px 10%;
+  background: #0f172a;
+}
+
+.leadership-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.leadership .section-title {
+  text-align: center;
+  font-size: 42px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 30px;
+}
+
+.activity-card {
+  background: #1e293b;
+
+  padding: 30px;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  transition: 0.3s;
+
+  box-shadow:
+    0 5px 20px rgba(0,0,0,0.25);
+}
+
+.activity-card:hover {
+  transform: translateY(-8px);
+}
+
+.activity-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.activity-card h3 {
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.activity-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.activity-card li {
+  color: #cbd5e1;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+/* ad */
+@media (max-width: 768px) {
+
+  .leadership .section-title {
+    font-size: 32px;
+  }
+
+}

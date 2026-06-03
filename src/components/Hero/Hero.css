@@ -1,0 +1,197 @@
+.hero {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 100px 10%;
+
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b
+  );
+
+  color: white;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+
+  width: 100%;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.hero-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.primary-btn {
+  background: #38bdf8;
+  color: white;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+}
+
+.secondary-btn {
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.secondary-btn:hover {
+  background: #38bdf8;
+  color: white;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 350px;
+  height: 350px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  border: 6px solid #38bdf8;
+
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+}
+
+
+
+/* ad */
+@media (max-width: 768px) {
+
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+  }
+
+  .hero-text h2 {
+    font-size: 24px;
+  }
+
+  .hero-image img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+
+/* ad */
+/* Typing Animation */
+
+.typing-text {
+  color: #38bdf8;
+  min-height: 40px;
+}
+
+.cursor {
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Social Icons */
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #38bdf8;
+  transform: translateY(-5px);
+}
+
+/* Floating Profile Image */
+
+.hero-image img {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Button Hover Effect */
+
+.btn:hover {
+  transform: scale(1.05);
+}
